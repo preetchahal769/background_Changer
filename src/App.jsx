@@ -1,7 +1,7 @@
 import "./App.css";
 import { React, useEffect, useState } from "react";
 function App() {
-  const images = [
+  const [images, setImages] = useState([
     "http://localhost:5173/images/BW.jpeg",
     "http://localhost:5173/images/ca.jpeg",
     "http://localhost:5173/images/HE.jpeg",
@@ -9,7 +9,7 @@ function App() {
     "http://localhost:5173/images/Im.jpeg",
     "http://localhost:5173/images/nf.jpeg",
     "http://localhost:5173/images/thor.jpeg",
-  ];
+  ]);
   const [backgroundImage, setBackgroundImage] = useState(images[0]);
 
   const handleClick = (index) => {
